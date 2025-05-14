@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengguna</title>
+    <style>
+        body {
+            background: url('bck.jpg') no-repeat center center fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .profile-header {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-name {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .profile-class {
+            margin: 5px 0 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .profile-content {
+            padding: 30px;
+        }
+        .info-section {
+            margin-bottom: 25px;
+        }
+        .info-title {
+            font-size: 18px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 5px;
+        }
+        .info-content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .edit-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .edit-btn:hover {
+            background-color: #45a049;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 15px;
+            align-items: center;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <img src="utspoto.jpeg" alt="Foto Profil" class="profile-picture">
+            <h1 class="profile-name">Boby Hosea Manalu</h1>
+            <p class="profile-class">Teknik Informatika</p>
+        </div>
+        
+        <div class="profile-content">
+            <div class="info-section">
+                <h2 class="info-title">Informasi Pribadi</h2>
+                <div class="info-grid">
+                    <div class="info-label">Umur:</div>
+                    <div class="info-content">20 Tahun</div>
+                    
+                    <div class="info-label">Prodi :</div>
+                    <div class="info-content">Teknik Informatika</div>
+                    
+                    <div class="info-label">Alamat:</div>
+                    <div class="info-content">
+                        Jl. desa sesat No. 123<br>
+                        Kecamatan Sukamaju<br>
+                        Kota los angles, Jawa Barat 40123
+                    </div>
+                </div>
+            </div>
+            
+            <a href="edit_profil.html" class="edit-btn">Edit Profil</a>
+            <a href="halamanlogin.html" class="edit-btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
